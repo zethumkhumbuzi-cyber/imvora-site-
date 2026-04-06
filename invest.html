@@ -492,7 +492,7 @@ body{padding-top:72px;overflow-x:hidden;}
     <p>Contact us directly to request our full executive summary and pitch documentation.</p>
     <div class="brow" style="justify-content:center;gap:16px;">
       <a href="/contact.html" class="bp" style="text-decoration:none;display:inline-block;">Get in Touch &rarr;</a>
-      <a href="/cdn-cgi/l/email-protection#cbaaafa6a2a58ba2a6bda4b9aaa3a4a7afa2a5acb8e5a8a4a6" class="bg" style="text-decoration:none;display:inline-block;"><span class="__cf_email__" data-cfemail="dcbdb8b1b5b29cb5b1aab3aebdb4b3b0b8b5b2bbaff2bfb3b1">[email&#160;protected]</span></a>
+      <a href="/cdn-cgi/l/email-protection#cbaaafa6a2a58ba2a6bda4b9aaa3a4a7afa2a5acb8e5a8a4a6" class="bg" style="text-decoration:none;display:inline-block;">admin&#64;imvoraholdings&#46;com</a>
     </div>
   </div>
 <footer>
@@ -551,5 +551,11 @@ window.addEventListener('DOMContentLoaded',function(){
       mob.classList.remove('open');
     });
   });
-  document.addEventListener('click',function(e){
-    if(mob.c
+    if(mob.classList.contains('open')&&!btn.contains(e.target)&&!mob.contains(e.target)){
+      mob.classList.remove('open');
+    }
+  });
+});
+</script>
+</body>
+</html>

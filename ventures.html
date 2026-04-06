@@ -474,5 +474,11 @@ window.addEventListener('DOMContentLoaded',function(){
       mob.classList.remove('open');
     });
   });
-  document.addEventListener('click',function(e){
-    if(mob.c
+    if(mob.classList.contains('open')&&!btn.contains(e.target)&&!mob.contains(e.target)){
+      mob.classList.remove('open');
+    }
+  });
+});
+</script>
+</body>
+</html>
