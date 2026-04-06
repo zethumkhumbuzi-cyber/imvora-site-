@@ -332,7 +332,6 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:56px;}
 <style>
 body{padding-top:72px;overflow-x:hidden;}
 .page{display:block!important;padding-top:0;min-height:auto;}
-
 .nlogo img{width:32px!important;height:32px!important;object-fit:contain!important;mix-blend-mode:multiply;}
 .footer-logo-row img{width:28px!important;height:28px!important;object-fit:contain!important;mix-blend-mode:multiply;}
 .hlogoimg{mix-blend-mode:multiply;}
@@ -340,10 +339,10 @@ body{padding-top:72px;overflow-x:hidden;}
   nav{padding:0 16px!important;}
   .nlinks{display:none!important;}
   .hamburger{display:flex!important;flex-direction:column;gap:5px;cursor:pointer;padding:6px;background:transparent;border:none;outline:none;}
-  .hamburger span{display:block;width:22px;height:2px;background:#ffffff;pointer-events:none;transition:all .3s;}
+  .hamburger span{display:block;width:22px;height:2px;background:#ffffff;pointer-events:none;}
   .mobile-menu{display:none!important;position:fixed;top:72px;left:0;right:0;bottom:0;background:rgba(10,10,10,.97);z-index:9999;flex-direction:column;align-items:center;justify-content:center;gap:32px;overflow-y:auto;}
   .mobile-menu.open{display:flex!important;}
-  .mobile-menu a{font-size:22px;color:rgba(255,255,255,.65);font-family:"Playfair Display",serif;text-decoration:none;padding:4px 0;display:block;}
+  .mobile-menu a{font-size:22px;color:rgba(255,255,255,.65);font-family:"Playfair Display",serif;text-decoration:none;padding:8px 0;display:block;}
   .mobile-menu a:active{color:#fff;}
   body{overflow-x:hidden!important;}
   .s,.sdark,.sdarker{padding:48px 20px!important;}
@@ -379,11 +378,11 @@ body{padding-top:72px;overflow-x:hidden;}
     <div><div class="nname">IMVORA</div><span class="nsub">HOLDINGS</span></div>
   </a>
   <ul class="nlinks"><li><a href="/index.html">Home</a></li><li><a href="/about.html">About</a></li><li><a href="/founder.html" style="color:var(--wh);">Founder</a></li><li><a href="/ventures.html">Ventures</a></li><li><a href="/articles.html">Articles</a></li><li><a href="/invest.html">Invest</a></li><li><a href="/contact.html" class="ncta">Contact</a></li></ul>
-  <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Open menu">
+  <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Menu">
     <span></span><span></span><span></span>
   </div>
 </nav>
-<div class="mobile-menu" id="mob" role="navigation">
+<div class="mobile-menu" id="mob">
   <a href="/index.html">Home</a><a href="/about.html">About</a><a href="/founder.html">Founder</a><a href="/ventures.html">Ventures</a><a href="/articles.html">Articles</a><a href="/invest.html">Invest</a><a href="/contact.html" style="color:var(--g);">Contact</a>
 </div>
 <div class="page">
@@ -509,7 +508,7 @@ body{padding-top:72px;overflow-x:hidden;}
     <div class="footer-col"><h5>CONNECT</h5><ul>
       <li><a href="/articles.html">Articles</a></li>
       <li><a href="/contact.html">Contact</a></li>
-      <li><a href="/cdn-cgi/l/email-protection#c1a0a5aca8af81a8acb7aeb3a0a9aeada5a8afa6b2efa2aeac">Email Us</a></li>
+      <li><a href="mailto:admin&#64;imvoraholdings&#46;com">admin&#64;imvoraholdings&#46;com</a></li>
     </ul></div>
   </div>
   <div class="footer-bottom">
@@ -521,30 +520,38 @@ body{padding-top:72px;overflow-x:hidden;}
   </div>
 </footer>
 </div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-window.addEventListener('DOMContentLoaded',function(){
-  var btn=document.getElementById('hamburger');
-  var mob=document.getElementById('mob');
-  if(!btn||!mob)return;
-  btn.addEventListener('click',function(e){
-    e.preventDefault();
-    e.stopPropagation();
-    if(mob.classList.contains('open')){
-      mob.classList.remove('open');
-    } else {
-      mob.classList.add('open');
-    }
-  });
-  mob.querySelectorAll('a').forEach(function(a){
-    a.addEventListener('click',function(){
-      mob.classList.remove('open');
+<script>
+(function() {
+  function initMenu() {
+    var btn = document.getElementById('hamburger');
+    var mob = document.getElementById('mob');
+    if (!btn || !mob) return;
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      if (mob.classList.contains('open')) {
+        mob.classList.remove('open');
+      } else {
+        mob.classList.add('open');
+      }
     });
-  });
-    if(mob.classList.contains('open')&&!btn.contains(e.target)&&!mob.contains(e.target)){
-      mob.classList.remove('open');
-    }
-  });
-});
+    mob.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        mob.classList.remove('open');
+      });
+    });
+    document.addEventListener('click', function(e) {
+      if (mob.classList.contains('open') && !btn.contains(e.target) && !mob.contains(e.target)) {
+        mob.classList.remove('open');
+      }
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMenu);
+  } else {
+    initMenu();
+  }
+})();
 </script>
 </body>
 </html>

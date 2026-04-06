@@ -332,7 +332,6 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:56px;}
 <style>
 body{padding-top:72px;overflow-x:hidden;}
 .page{display:block!important;padding-top:0;min-height:auto;}
-
 .nlogo img{width:32px!important;height:32px!important;object-fit:contain!important;mix-blend-mode:multiply;}
 .footer-logo-row img{width:28px!important;height:28px!important;object-fit:contain!important;mix-blend-mode:multiply;}
 .hlogoimg{mix-blend-mode:multiply;}
@@ -340,10 +339,10 @@ body{padding-top:72px;overflow-x:hidden;}
   nav{padding:0 16px!important;}
   .nlinks{display:none!important;}
   .hamburger{display:flex!important;flex-direction:column;gap:5px;cursor:pointer;padding:6px;background:transparent;border:none;outline:none;}
-  .hamburger span{display:block;width:22px;height:2px;background:#ffffff;pointer-events:none;transition:all .3s;}
+  .hamburger span{display:block;width:22px;height:2px;background:#ffffff;pointer-events:none;}
   .mobile-menu{display:none!important;position:fixed;top:72px;left:0;right:0;bottom:0;background:rgba(10,10,10,.97);z-index:9999;flex-direction:column;align-items:center;justify-content:center;gap:32px;overflow-y:auto;}
   .mobile-menu.open{display:flex!important;}
-  .mobile-menu a{font-size:22px;color:rgba(255,255,255,.65);font-family:"Playfair Display",serif;text-decoration:none;padding:4px 0;display:block;}
+  .mobile-menu a{font-size:22px;color:rgba(255,255,255,.65);font-family:"Playfair Display",serif;text-decoration:none;padding:8px 0;display:block;}
   .mobile-menu a:active{color:#fff;}
   body{overflow-x:hidden!important;}
   .s,.sdark,.sdarker{padding:48px 20px!important;}
@@ -379,11 +378,11 @@ body{padding-top:72px;overflow-x:hidden;}
     <div><div class="nname">IMVORA</div><span class="nsub">HOLDINGS</span></div>
   </a>
   <ul class="nlinks"><li><a href="/index.html">Home</a></li><li><a href="/about.html">About</a></li><li><a href="/founder.html">Founder</a></li><li><a href="/ventures.html">Ventures</a></li><li><a href="/articles.html">Articles</a></li><li><a href="/invest.html">Invest</a></li><li><a href="/contact.html" class="ncta">Contact</a></li></ul>
-  <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Open menu">
+  <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Menu">
     <span></span><span></span><span></span>
   </div>
 </nav>
-<div class="mobile-menu" id="mob" role="navigation">
+<div class="mobile-menu" id="mob">
   <a href="/index.html">Home</a><a href="/about.html">About</a><a href="/founder.html">Founder</a><a href="/ventures.html">Ventures</a><a href="/articles.html">Articles</a><a href="/invest.html">Invest</a><a href="/contact.html" style="color:var(--g);">Contact</a>
 </div>
 <div class="page">
@@ -405,7 +404,7 @@ body{padding-top:72px;overflow-x:hidden;}
 <h2>3. Data Storage and Security</h2>
 <p>Your information is stored securely and we implement industry-standard measures to protect it from unauthorised access, disclosure, or destruction. We retain your data only for as long as necessary to fulfil the purposes described in this policy.</p>
 <h2>4. Your Rights</h2>
-<p>You have the right to access, correct, or request deletion of your personal information at any time. To exercise these rights, please contact us at <span>admin</span>&#64;<span>imvoraholdings.com</span>. We will respond to all requests within 30 days.</p>
+<p>You have the right to access, correct, or request deletion of your personal information at any time. To exercise these rights, please contact us at <span>admin&#64;imvoraholdings&#46;com</span>. We will respond to all requests within 30 days.</p>
 <h2>5. Cookies</h2>
 <p>Our website uses minimal cookies necessary for basic functionality. We do not use tracking or advertising cookies. You may disable cookies in your browser settings without affecting your ability to use our site.</p>
 <h2>6. Third-Party Services</h2>
@@ -413,7 +412,7 @@ body{padding-top:72px;overflow-x:hidden;}
 <h2>7. Changes to This Policy</h2>
 <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by updating the effective date at the top of this page.</p>
 <h2>8. Contact Us</h2>
-<p>If you have any questions about this Privacy Policy, please contact us at:<br/><strong style="color:var(--wh);"><span>admin</span>&#64;<span>imvoraholdings.com</span></strong><br/>IMVORA Holdings (Pty) Ltd, Johannesburg, South Africa.</p>
+<p>If you have any questions about this Privacy Policy, please contact us at:<br/><strong style="color:var(--wh);"><span>admin&#64;imvoraholdings&#46;com</span></strong><br/>IMVORA Holdings (Pty) Ltd, Johannesburg, South Africa.</p>
 <div style="margin-top:52px;">
 <a class="bg" href="/index.html">← Back to Home</a>
 </div>
@@ -442,7 +441,7 @@ body{padding-top:72px;overflow-x:hidden;}
     <div class="footer-col"><h5>CONNECT</h5><ul>
       <li><a href="/articles.html">Articles</a></li>
       <li><a href="/contact.html">Contact</a></li>
-      <li><a href="/cdn-cgi/l/email-protection#2140454c484f61484c574e5340494e4d45484f46520f424e4c">Email Us</a></li>
+      <li><a href="mailto:admin&#64;imvoraholdings&#46;com">admin&#64;imvoraholdings&#46;com</a></li>
     </ul></div>
   </div>
   <div class="footer-bottom">
@@ -454,30 +453,38 @@ body{padding-top:72px;overflow-x:hidden;}
   </div>
 </footer>
 </div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-window.addEventListener('DOMContentLoaded',function(){
-  var btn=document.getElementById('hamburger');
-  var mob=document.getElementById('mob');
-  if(!btn||!mob)return;
-  btn.addEventListener('click',function(e){
-    e.preventDefault();
-    e.stopPropagation();
-    if(mob.classList.contains('open')){
-      mob.classList.remove('open');
-    } else {
-      mob.classList.add('open');
-    }
-  });
-  mob.querySelectorAll('a').forEach(function(a){
-    a.addEventListener('click',function(){
-      mob.classList.remove('open');
+<script>
+(function() {
+  function initMenu() {
+    var btn = document.getElementById('hamburger');
+    var mob = document.getElementById('mob');
+    if (!btn || !mob) return;
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      if (mob.classList.contains('open')) {
+        mob.classList.remove('open');
+      } else {
+        mob.classList.add('open');
+      }
     });
-  });
-    if(mob.classList.contains('open')&&!btn.contains(e.target)&&!mob.contains(e.target)){
-      mob.classList.remove('open');
-    }
-  });
-});
+    mob.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        mob.classList.remove('open');
+      });
+    });
+    document.addEventListener('click', function(e) {
+      if (mob.classList.contains('open') && !btn.contains(e.target) && !mob.contains(e.target)) {
+        mob.classList.remove('open');
+      }
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMenu);
+  } else {
+    initMenu();
+  }
+})();
 </script>
 </body>
 </html>
