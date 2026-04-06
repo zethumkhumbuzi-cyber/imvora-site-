@@ -363,24 +363,24 @@ font-size:30px !important;
 </a>
 <ul class="nlinks">
 <li><a class="active" id="n-home" onclick="go('home')">Home</a></li>
-<li><a id="n-about" onclick="go('about')">About</a></li>
-<li><a id="n-founder" onclick="go('founder')">Founder</a></li>
-<li><a id="n-portfolio" onclick="go('portfolio')">Portfolio</a></li>
-<li><a id="n-articles" onclick="go('articles')">Articles</a></li>
-<li><a class="ncta" id="n-contact" onclick="go('contact')">Contact</a></li>
+<li><a href="/about.html">About</a></li>
+<li><a href="/founder.html">Founder</a></li>
+<li><a href="/ventures.html">Ventures</a></li>
+<li><a href="/articles.html">Articles</a></li>
+<li><a class="ncta" id="n-contact" onclick="window.location='/contact.html'">Contact</a></li>
 </ul>
 <div class="hamburger" id="hamburger" onclick="toggleMenu()">
 <span></span><span></span><span></span>
 </div>
 </nav>
 <div class="mobile-menu" id="mobile-menu">
-<a onclick="go('home');toggleMenu()">Home</a>
-<a onclick="go('about');toggleMenu()">About</a>
-<a onclick="go('founder');toggleMenu()">Founder</a>
-<a onclick="go('portfolio');toggleMenu()">Portfolio</a>
-<a onclick="go('articles');toggleMenu()">Articles</a>
-<a onclick="go('contentflow');toggleMenu()">Ms. Flow AI</a>
-<a onclick="go('contact');toggleMenu()" style="color:var(--g);">Contact</a>
+<a href="/index.html">Home</a>
+<a href="/about.html">About</a>
+<a href="/founder.html">Founder</a>
+<a href="/ventures.html">Ventures</a>
+<a href="/articles.html">Articles</a>
+<a href="/ventures.html">Ventures</a>
+<a href="/invest.html">Invest</a><a href="/contact.html" style="color:var(--g);">Contact</a>
 </div>
 <!-- ═══ HOME ═══ -->
 <div class="page active" id="page-home">
@@ -390,8 +390,8 @@ font-size:30px !important;
 <h1 class="hh1">Vision<br/>in <em>Motion.</em></h1>
 <p class="hsub">A home for disruptive African-led technology — built with clarity, anchored in Ubuntu, and expanding without limit.</p>
 <div class="brow">
-<button class="bp" onclick="go('portfolio')">Explore Portfolio</button>
-<button class="bg" onclick="go('about')">Our Philosophy</button>
+<button class="bp" onclick="window.location='/ventures.html'">Explore Portfolio</button>
+<button class="bg" onclick="window.location='/about.html'">Our Philosophy</button>
 </div>
 </div>
 <div class="hvisual">
@@ -425,7 +425,7 @@ font-size:30px !important;
 <div class="livebadge"><span class="livedot"></span>LIVE VENTURE</div>
 <h2 style="font-size:clamp(36px,4vw,54px);margin-bottom:20px;">Ms. Flow AI</h2>
 <p style="font-size:17px;color:var(--mu);line-height:1.85;margin-bottom:32px;font-weight:300;">The AI-powered creator platform reimagining how African media professionals produce, distribute, and monetise content at scale. Powered by Ms. Flow AI — your always-on intelligent creative partner.</p>
-<button class="bp" onclick="go('contentflow')">Explore Ms. Flow AI →</button>
+<button class="bp" onclick="window.location='/ventures.html'">Explore Ms. Flow AI →</button>
 </div>
 <div class="msfmock" style="padding:0;overflow:hidden;">
 <div class="msfmockh" style="padding:14px 16px;background:var(--dark3);">
@@ -471,7 +471,7 @@ font-size:30px !important;
 <p>Pertunia Hlengiwe Mkhumbuzi is a South African founder, lawyer, and technologist. She writes code with the same precision she once applied to legal frameworks, and builds systems the way she once built arguments: with evidence, structure, and an unwavering belief in what she sees.</p>
 <p>At the center of IMVORA is her conviction that African founders don't just deserve a seat at the table of global innovation — they deserve to build the table itself.</p>
 <div class="pq">"Innovation is not a race. It is a responsibility. I build because I see what's possible — and I can't unsee it."</div>
-<button class="bg" onclick="go('founder')">Read Full Bio →</button>
+<button class="bg" onclick="window.location='/founder.html'">Read Full Bio →</button>
 </div>
 </div>
 </div>
@@ -480,8 +480,8 @@ font-size:30px !important;
 <h2>Ready to build something<br/><em>that matters?</em></h2>
 <p>Whether you're a collaborator, a creator, or someone who believes in what we're building — we'd love to hear from you.</p>
 <div class="brow" style="justify-content:center;">
-<button class="bp" onclick="go('contact')">Get in Touch</button>
-<button class="bg" onclick="go('portfolio')">Explore Our Ventures</button>
+<button class="bp" onclick="window.location='/contact.html'">Get in Touch</button>
+<button class="bg" onclick="window.location='/ventures.html'">Explore Our Ventures</button>
 </div>
 </div>
 <footer>
@@ -497,18 +497,18 @@ font-size:30px !important;
 </div>
 </div>
 <div class="footer-col"><h5>COMPANY</h5><ul>
-<li><a onclick="go('home')">Home</a></li>
-<li><a onclick="go('about')">About</a></li>
-<li><a onclick="go('founder')">Founder</a></li>
+<li><a href="/index.html">Home</a></li>
+<li><a href="/about.html">About</a></li>
+<li><a href="/founder.html">Founder</a></li>
 </ul></div>
 <div class="footer-col"><h5>VENTURES</h5><ul>
-<li><a onclick="go('contentflow')">Ms. Flow AI</a></li>
-<li><a onclick="go('portfolio')">All Portfolio</a></li>
+<li><a href="/ventures.html">Ventures</a></li>
+<li><a href="/invest.html">Invest</a></li>
 </ul></div>
 <div class="footer-col"><h5>CONNECT</h5><ul>
-<li><a onclick="go('articles')">Articles</a></li>
-<li><a onclick="go('contact')">Contact</a></li>
-<li><a href="mailto:admin@imvoraholdings.com">Email Us</a></li>
+<li><a href="/articles.html">Articles</a></li>
+<li><a href="/contact.html">Contact</a></li>
+<li><a href="/cdn-cgi/l/email-protection#4e2f2a2327200e272338213c2f2621222a2720293d602d2123">Email Us</a></li>
 </ul></div>
 </div>
 <div class="footer-bottom">
@@ -562,7 +562,7 @@ font-size:30px !important;
 <div class="cta">
 <h2>Meet the person<br/>behind the company.</h2>
 <p>The founder. The builder. The vision.</p>
-<button class="bp" onclick="go('founder')">Founder Bio →</button>
+<button class="bp" onclick="window.location='/founder.html'">Founder Bio →</button>
 </div>
 <footer>
 <div class="footer-inner">
@@ -577,18 +577,18 @@ font-size:30px !important;
 </div>
 </div>
 <div class="footer-col"><h5>COMPANY</h5><ul>
-<li><a onclick="go('home')">Home</a></li>
-<li><a onclick="go('about')">About</a></li>
-<li><a onclick="go('founder')">Founder</a></li>
+<li><a href="/index.html">Home</a></li>
+<li><a href="/about.html">About</a></li>
+<li><a href="/founder.html">Founder</a></li>
 </ul></div>
 <div class="footer-col"><h5>VENTURES</h5><ul>
-<li><a onclick="go('contentflow')">Ms. Flow AI</a></li>
-<li><a onclick="go('portfolio')">All Portfolio</a></li>
+<li><a href="/ventures.html">Ventures</a></li>
+<li><a href="/invest.html">Invest</a></li>
 </ul></div>
 <div class="footer-col"><h5>CONNECT</h5><ul>
-<li><a onclick="go('articles')">Articles</a></li>
-<li><a onclick="go('contact')">Contact</a></li>
-<li><a href="mailto:admin@imvoraholdings.com">Email Us</a></li>
+<li><a href="/articles.html">Articles</a></li>
+<li><a href="/contact.html">Contact</a></li>
+<li><a href="/cdn-cgi/l/email-protection#ef8e8b828681af868299809d8e8780838b8681889cc18c8082">Email Us</a></li>
 </ul></div>
 </div>
 <div class="footer-bottom">
@@ -698,7 +698,7 @@ font-size:30px !important;
 <div class="cta">
 <h2>Let's build something together.</h2>
 <p>Partnership, collaboration, or just a conversation.</p>
-<button class="bp" onclick="go('contact')">Get in Touch →</button>
+<button class="bp" onclick="window.location='/contact.html'">Get in Touch →</button>
 </div>
 <footer>
 <div class="footer-inner">
@@ -713,18 +713,18 @@ font-size:30px !important;
 </div>
 </div>
 <div class="footer-col"><h5>COMPANY</h5><ul>
-<li><a onclick="go('home')">Home</a></li>
-<li><a onclick="go('about')">About</a></li>
-<li><a onclick="go('founder')">Founder</a></li>
+<li><a href="/index.html">Home</a></li>
+<li><a href="/about.html">About</a></li>
+<li><a href="/founder.html">Founder</a></li>
 </ul></div>
 <div class="footer-col"><h5>VENTURES</h5><ul>
-<li><a onclick="go('contentflow')">Ms. Flow AI</a></li>
-<li><a onclick="go('portfolio')">All Portfolio</a></li>
+<li><a href="/ventures.html">Ventures</a></li>
+<li><a href="/invest.html">Invest</a></li>
 </ul></div>
 <div class="footer-col"><h5>CONNECT</h5><ul>
-<li><a onclick="go('articles')">Articles</a></li>
-<li><a onclick="go('contact')">Contact</a></li>
-<li><a href="mailto:admin@imvoraholdings.com">Email Us</a></li>
+<li><a href="/articles.html">Articles</a></li>
+<li><a href="/contact.html">Contact</a></li>
+<li><a href="/cdn-cgi/l/email-protection#3c5d585155527c55514a534e5d5453505855525b4f125f5351">Email Us</a></li>
 </ul></div>
 </div>
 <div class="footer-bottom">
@@ -743,7 +743,7 @@ font-size:30px !important;
 <h1 style="font-size:clamp(52px,6.5vw,88px);line-height:.97;margin-bottom:24px;">Every venture,<br/>a <em>thesis.</em></h1>
 <p class="sbody">IMVORA Holdings builds technology companies across Africa and globally. Each represents a disciplined conviction about where value is forming — and the patience to build it properly.</p>
 <div class="portgrid">
-<div class="portcard" onclick="go('contentflow')">
+<div class="portcard" onclick="window.location='/ventures.html'">
 <div class="pstat pop">• OPERATIONAL</div>
 <h3>Ms. Flow AI</h3>
 <p>The AI-powered creator platform transforming how African media professionals produce, distribute, and monetise content. Powered by Ms. Flow AI — our proprietary intelligent creative engine.</p>
@@ -766,7 +766,7 @@ font-size:30px !important;
 <div class="cta">
 <h2>Interested in<br/><em>partnering with us?</em></h2>
 <p>We're open to collaboration, partnerships, and conversations that move things forward.</p>
-<button class="bp" onclick="go('contact')">Start a Conversation →</button>
+<button class="bp" onclick="window.location='/contact.html'">Start a Conversation →</button>
 </div>
 <footer>
 <div class="footer-inner">
@@ -781,18 +781,18 @@ font-size:30px !important;
 </div>
 </div>
 <div class="footer-col"><h5>COMPANY</h5><ul>
-<li><a onclick="go('home')">Home</a></li>
-<li><a onclick="go('about')">About</a></li>
-<li><a onclick="go('founder')">Founder</a></li>
+<li><a href="/index.html">Home</a></li>
+<li><a href="/about.html">About</a></li>
+<li><a href="/founder.html">Founder</a></li>
 </ul></div>
 <div class="footer-col"><h5>VENTURES</h5><ul>
-<li><a onclick="go('contentflow')">Ms. Flow AI</a></li>
-<li><a onclick="go('portfolio')">All Portfolio</a></li>
+<li><a href="/ventures.html">Ventures</a></li>
+<li><a href="/invest.html">Invest</a></li>
 </ul></div>
 <div class="footer-col"><h5>CONNECT</h5><ul>
-<li><a onclick="go('articles')">Articles</a></li>
-<li><a onclick="go('contact')">Contact</a></li>
-<li><a href="mailto:admin@imvoraholdings.com">Email Us</a></li>
+<li><a href="/articles.html">Articles</a></li>
+<li><a href="/contact.html">Contact</a></li>
+<li><a href="/cdn-cgi/l/email-protection#c1a0a5aca8af81a8acb7aeb3a0a9aeada5a8afa6b2efa2aeac">Email Us</a></li>
 </ul></div>
 </div>
 <div class="footer-bottom">
@@ -877,18 +877,18 @@ font-size:30px !important;
 </div>
 </div>
 <div class="footer-col"><h5>COMPANY</h5><ul>
-<li><a onclick="go('home')">Home</a></li>
-<li><a onclick="go('about')">About</a></li>
-<li><a onclick="go('founder')">Founder</a></li>
+<li><a href="/index.html">Home</a></li>
+<li><a href="/about.html">About</a></li>
+<li><a href="/founder.html">Founder</a></li>
 </ul></div>
 <div class="footer-col"><h5>VENTURES</h5><ul>
-<li><a onclick="go('contentflow')">Ms. Flow AI</a></li>
-<li><a onclick="go('portfolio')">All Portfolio</a></li>
+<li><a href="/ventures.html">Ventures</a></li>
+<li><a href="/invest.html">Invest</a></li>
 </ul></div>
 <div class="footer-col"><h5>CONNECT</h5><ul>
-<li><a onclick="go('articles')">Articles</a></li>
-<li><a onclick="go('contact')">Contact</a></li>
-<li><a href="mailto:admin@imvoraholdings.com">Email Us</a></li>
+<li><a href="/articles.html">Articles</a></li>
+<li><a href="/contact.html">Contact</a></li>
+<li><a href="/cdn-cgi/l/email-protection#6c0d080105022c05011a031e0d0403000805020b1f420f0301">Email Us</a></li>
 </ul></div>
 </div>
 <div class="footer-bottom">
@@ -927,18 +927,18 @@ font-size:30px !important;
 </div>
 </div>
 <div class="footer-col"><h5>COMPANY</h5><ul>
-<li><a onclick="go('home')">Home</a></li>
-<li><a onclick="go('about')">About</a></li>
-<li><a onclick="go('founder')">Founder</a></li>
+<li><a href="/index.html">Home</a></li>
+<li><a href="/about.html">About</a></li>
+<li><a href="/founder.html">Founder</a></li>
 </ul></div>
 <div class="footer-col"><h5>VENTURES</h5><ul>
-<li><a onclick="go('contentflow')">Ms. Flow AI</a></li>
-<li><a onclick="go('portfolio')">All Portfolio</a></li>
+<li><a href="/ventures.html">Ventures</a></li>
+<li><a href="/invest.html">Invest</a></li>
 </ul></div>
 <div class="footer-col"><h5>CONNECT</h5><ul>
-<li><a onclick="go('articles')">Articles</a></li>
-<li><a onclick="go('contact')">Contact</a></li>
-<li><a href="mailto:admin@imvoraholdings.com">Email Us</a></li>
+<li><a href="/articles.html">Articles</a></li>
+<li><a href="/contact.html">Contact</a></li>
+<li><a href="/cdn-cgi/l/email-protection#5130353c383f11383c273e2330393e3d35383f36227f323e3c">Email Us</a></li>
 </ul></div>
 </div>
 <div class="footer-bottom">
@@ -966,18 +966,18 @@ font-size:30px !important;
 </div>
 </div>
 <div class="footer-col"><h5>COMPANY</h5><ul>
-<li><a onclick="go('home')">Home</a></li>
-<li><a onclick="go('about')">About</a></li>
-<li><a onclick="go('founder')">Founder</a></li>
+<li><a href="/index.html">Home</a></li>
+<li><a href="/about.html">About</a></li>
+<li><a href="/founder.html">Founder</a></li>
 </ul></div>
 <div class="footer-col"><h5>VENTURES</h5><ul>
-<li><a onclick="go('contentflow')">Ms. Flow AI</a></li>
-<li><a onclick="go('portfolio')">All Portfolio</a></li>
+<li><a href="/ventures.html">Ventures</a></li>
+<li><a href="/invest.html">Invest</a></li>
 </ul></div>
 <div class="footer-col"><h5>CONNECT</h5><ul>
-<li><a onclick="go('articles')">Articles</a></li>
-<li><a onclick="go('contact')">Contact</a></li>
-<li><a href="mailto:admin@imvoraholdings.com">Email Us</a></li>
+<li><a href="/articles.html">Articles</a></li>
+<li><a href="/contact.html">Contact</a></li>
+<li><a href="/cdn-cgi/l/email-protection#f293969f9b9cb29b9f849d80939a9d9e969b9c9581dc919d9f">Email Us</a></li>
 </ul></div>
 </div>
 <div class="footer-bottom">
@@ -998,7 +998,7 @@ font-size:30px !important;
 <h2>Let's build<br/><em>something.</em></h2>
 <p>Whether you're a creator interested in Ms. Flow AI, a collaborator who sees what we're building, or someone who simply wants to connect — we'd like to hear from you.</p>
 <div class="cdetails">
-<div class="cdetail"><div class="cicon">✉</div><div><div class="clabel">EMAIL</div><div class="ctext">admin@imvoraholdings.com</div></div></div>
+<div class="cdetail"><div class="cicon">✉</div><div><div class="clabel">EMAIL</div><div class="ctext"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="08696c6561664861657e677a696067646c61666f7b266b6765">[email&#160;protected]</a></div></div></div>
 <div class="cdetail"><div class="cicon">🌎</div><div><div class="clabel">HEADQUARTERS</div><div class="ctext">Johannesburg, South Africa<br/>Building globally from here.</div></div></div>
 <div class="cdetail"><div class="cicon">⏰</div><div><div class="clabel">RESPONSE TIME</div><div class="ctext">We respond to meaningful inquiries within 48 hours.</div></div></div>
 </div>
@@ -1040,18 +1040,18 @@ font-size:30px !important;
 </div>
 </div>
 <div class="footer-col"><h5>COMPANY</h5><ul>
-<li><a onclick="go('home')">Home</a></li>
-<li><a onclick="go('about')">About</a></li>
-<li><a onclick="go('founder')">Founder</a></li>
+<li><a href="/index.html">Home</a></li>
+<li><a href="/about.html">About</a></li>
+<li><a href="/founder.html">Founder</a></li>
 </ul></div>
 <div class="footer-col"><h5>VENTURES</h5><ul>
-<li><a onclick="go('contentflow')">Ms. Flow AI</a></li>
-<li><a onclick="go('portfolio')">All Portfolio</a></li>
+<li><a href="/ventures.html">Ventures</a></li>
+<li><a href="/invest.html">Invest</a></li>
 </ul></div>
 <div class="footer-col"><h5>CONNECT</h5><ul>
-<li><a onclick="go('articles')">Articles</a></li>
-<li><a onclick="go('contact')">Contact</a></li>
-<li><a href="mailto:admin@imvoraholdings.com">Email Us</a></li>
+<li><a href="/articles.html">Articles</a></li>
+<li><a href="/contact.html">Contact</a></li>
+<li><a href="/cdn-cgi/l/email-protection#5a3b3e3733341a33372c35283b3235363e33343d2974393537">Email Us</a></li>
 </ul></div>
 </div>
 <div class="footer-bottom">
@@ -1083,7 +1083,7 @@ font-size:30px !important;
 <h2>3. Data Storage and Security</h2>
 <p>Your information is stored securely and we implement industry-standard measures to protect it from unauthorised access, disclosure, or destruction. We retain your data only for as long as necessary to fulfil the purposes described in this policy.</p>
 <h2>4. Your Rights</h2>
-<p>You have the right to access, correct, or request deletion of your personal information at any time. To exercise these rights, please contact us at admin@imvoraholdings.com. We will respond to all requests within 30 days.</p>
+<p>You have the right to access, correct, or request deletion of your personal information at any time. To exercise these rights, please contact us at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="dabbbeb7b3b49ab3b7acb5a8bbb2b5b6beb3b4bda9f4b9b5b7">[email&#160;protected]</a>. We will respond to all requests within 30 days.</p>
 <h2>5. Cookies</h2>
 <p>Our website uses minimal cookies necessary for basic functionality. We do not use tracking or advertising cookies. You may disable cookies in your browser settings without affecting your ability to use our site.</p>
 <h2>6. Third-Party Services</h2>
@@ -1091,7 +1091,7 @@ font-size:30px !important;
 <h2>7. Changes to This Policy</h2>
 <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by updating the effective date at the top of this page.</p>
 <h2>8. Contact Us</h2>
-<p>If you have any questions about this Privacy Policy, please contact us at:<br/><strong style="color:var(--wh);">admin@imvoraholdings.com</strong><br/>IMVORA Holdings (Pty) Ltd, Johannesburg, South Africa.</p>
+<p>If you have any questions about this Privacy Policy, please contact us at:<br/><strong style="color:var(--wh);"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="dcbdb8b1b5b29cb5b1aab3aebdb4b3b0b8b5b2bbaff2bfb3b1">[email&#160;protected]</a></strong><br/>IMVORA Holdings (Pty) Ltd, Johannesburg, South Africa.</p>
 <div style="margin-top:52px;">
 <button class="bg" onclick="go('home')">← Back to Home</button>
 </div>
@@ -1109,18 +1109,18 @@ font-size:30px !important;
 </div>
 </div>
 <div class="footer-col"><h5>COMPANY</h5><ul>
-<li><a onclick="go('home')">Home</a></li>
-<li><a onclick="go('about')">About</a></li>
-<li><a onclick="go('founder')">Founder</a></li>
+<li><a href="/index.html">Home</a></li>
+<li><a href="/about.html">About</a></li>
+<li><a href="/founder.html">Founder</a></li>
 </ul></div>
 <div class="footer-col"><h5>VENTURES</h5><ul>
-<li><a onclick="go('contentflow')">Ms. Flow AI</a></li>
-<li><a onclick="go('portfolio')">All Portfolio</a></li>
+<li><a href="/ventures.html">Ventures</a></li>
+<li><a href="/invest.html">Invest</a></li>
 </ul></div>
 <div class="footer-col"><h5>CONNECT</h5><ul>
-<li><a onclick="go('articles')">Articles</a></li>
-<li><a onclick="go('contact')">Contact</a></li>
-<li><a href="mailto:admin@imvoraholdings.com">Email Us</a></li>
+<li><a href="/articles.html">Articles</a></li>
+<li><a href="/contact.html">Contact</a></li>
+<li><a href="/cdn-cgi/l/email-protection#2342474e4a4d634a4e554c51424b4c4f474a4d44500d404c4e">Email Us</a></li>
 </ul></div>
 </div>
 <div class="footer-bottom">
@@ -1154,7 +1154,7 @@ font-size:30px !important;
 <h2>7. Changes to Terms</h2>
 <p>We reserve the right to update these Terms of Use at any time. Continued use of the site after changes constitutes your acceptance of the revised terms.</p>
 <h2>8. Contact</h2>
-<p>For any questions regarding these terms, contact us at:<br/><strong style="color:var(--wh);">admin@imvoraholdings.com</strong></p>
+<p>For any questions regarding these terms, contact us at:<br/><strong style="color:var(--wh);"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2041444d494e60494d564f5241484f4c44494e47530e434f4d">[email&#160;protected]</a></strong></p>
 <div style="margin-top:52px;">
 <button class="bg" onclick="go('home')">← Back to Home</button>
 </div>
@@ -1172,18 +1172,18 @@ font-size:30px !important;
 </div>
 </div>
 <div class="footer-col"><h5>COMPANY</h5><ul>
-<li><a onclick="go('home')">Home</a></li>
-<li><a onclick="go('about')">About</a></li>
-<li><a onclick="go('founder')">Founder</a></li>
+<li><a href="/index.html">Home</a></li>
+<li><a href="/about.html">About</a></li>
+<li><a href="/founder.html">Founder</a></li>
 </ul></div>
 <div class="footer-col"><h5>VENTURES</h5><ul>
-<li><a onclick="go('contentflow')">Ms. Flow AI</a></li>
-<li><a onclick="go('portfolio')">All Portfolio</a></li>
+<li><a href="/ventures.html">Ventures</a></li>
+<li><a href="/invest.html">Invest</a></li>
 </ul></div>
 <div class="footer-col"><h5>CONNECT</h5><ul>
-<li><a onclick="go('articles')">Articles</a></li>
-<li><a onclick="go('contact')">Contact</a></li>
-<li><a href="mailto:admin@imvoraholdings.com">Email Us</a></li>
+<li><a href="/articles.html">Articles</a></li>
+<li><a href="/contact.html">Contact</a></li>
+<li><a href="/cdn-cgi/l/email-protection#7b1a1f1612153b12160d14091a1314171f12151c0855181416">Email Us</a></li>
 </ul></div>
 </div>
 <div class="footer-bottom">
@@ -1195,7 +1195,7 @@ font-size:30px !important;
 </div>
 </footer>
 </div>
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const ARTS = [
   {id:'africa-digital',tag:"FOUNDER'S INSIGHTS",cat:'insights',title:"Africa Is Not an Emerging Market. It’s an Emerged One.",summary:"The framing that has held African tech back for a decade — and why the founders building here right now are already past it.",date:'JAN 2026',read:'7 MIN',body:[{t:'p',tx:"There is a phrase I have grown tired of hearing: ‘Africa is an emerging market.’ I understand why it is used. It signals opportunity. It signals growth. But it also signals something else — a perspective that places Africa perpetually in the future tense, always about to arrive, never quite here."},{t:'p',tx:"The founders I know who are building on this continent are not waiting to emerge. They are building, shipping, iterating, and serving millions of users right now. Ms. Flow AI is live right now. The Africa of this document’s imagination is already operational."},{t:'h2',tx:"What ‘Emerging’ Actually Means"},{t:'p',tx:"When investors describe a market as ‘emerging,’ they usually mean: ‘The infrastructure we need to make money here is still being built, and we are not yet comfortable with the risk profile.’ That is a fair assessment of investor psychology. It is not a fair assessment of the market itself."},{t:'bq',tx:"The most profitable investments of the next decade will not be discovered in Silicon Valley. They will be built in Nairobi, Lagos, Cape Town, and Johannesburg."},{t:'p',tx:"Africa has 700 million internet users. The world’s youngest population. Mobile money transactions on the continent exceed those of the entire developed world combined. The infrastructure question has been answered. The question now is who will build the layer on top of it."},{t:'h2',tx:"Why I Build Here"},{t:'p',tx:"I build here because I am from here. Because the tools that African creators, entrepreneurs, and professionals need have not yet been built with them in mind — and I know what it feels like to use software designed for someone else’s reality. Ms. Flow AI was not built because I identified a market. It was built because I experienced the problem. That is the difference between building from the inside and observing from the outside. I intend to keep building from the inside."}]},
   {id:'ms-flow',tag:'AI & FUTURE',cat:'ai',title:"Why We Built Ms. Flow AI — And What She Actually Does",summary:"Most AI tools were trained almost entirely on Western, English-language data. Here’s what that means for African creators — and how we’re changing it.",date:'DEC 2025',read:'6 MIN',body:[{t:'p',tx:"Every major AI content tool launched in the last three years shares a common architectural limitation: it was trained predominantly on English-language, Western-context data. For the African creator — writing in Swahili, making content for a Lagos audience, navigating the cultural nuances of Zulu humour — these tools are, at best, blunt instruments."},{t:'h2',tx:"The Training Data Problem"},{t:'p',tx:"An AI model is only as culturally intelligent as the data it was trained on. And the reality is that most foundational AI models have been trained on data that dramatically underrepresents African languages, cultural contexts, and creative traditions."},{t:'bq',tx:"We didn’t build Ms. Flow AI to replace African creativity. We built her to amplify it."},{t:'p',tx:"Ms. Flow AI is the intelligent creative engine inside Ms. Flow AI. She helps creators generate ideas, write scripts, optimise captions, schedule content, and understand what’s working across platforms. But beyond the features, she was designed from the ground up to understand the context in which African creators actually work."},{t:'h2',tx:"What Makes Her Different"},{t:'p',tx:"Ms. Flow AI is more than an assistant. She is a rhythm-keeper, a thought-sparker, and a workflow-organiser who makes the creative process feel lighter and more structured. We are building AI infrastructure for African content creators that treats African creative culture not as a niche, but as a primary design parameter. That is the mission. That is what she represents."}]},
@@ -1237,33 +1237,4 @@ window.rad = function(id){
   const a=ARTS.find(x=>x.id===id);
   if(!a) return;
   const body=a.body.map(b=>{
-    if(b.t==='p') return `<p>${b.tx}</p>`;
-    if(b.t==='h2') return `<h2>${b.tx}</h2>`;
-    if(b.t==='bq') return `<blockquote>${b.tx}</blockquote>`;
-    return '';
-  }).join('');
-  document.getElementById('avwrap').innerHTML=`<div class="backlink" onclick="go('articles')">&larr; Back to Articles</div><div class="avtag">${a.tag}</div><h1 class="avtitle">${a.title}</h1><div class="avmeta"><span>Pertunia H. Mkhumbuzi</span><span>${a.date}</span><span>${a.read} READ</span></div><div class="avbody">${body}</div>`;
-};
-
-window.hc = async function(e){
-  e.preventDefault();
-  const form = e.target;
-  const btn = form.querySelector('button[type=submit]');
-  btn.textContent = 'Sending...';
-  btn.disabled = true;
-  try {
-    const data = new FormData(form);
-    await fetch('https://formsubmit.co/admin@imvoraholdings.com', {
-      method: 'POST',
-      body: data,
-      headers: {'Accept': 'application/json'}
-    });
-  } catch(err) {}
-  document.getElementById('cform').style.display='none';
-  document.getElementById('csuccess').style.display='block';
-};
-
-window.ra('all');
-</script>
-</body>
-</html>
+    if(b.t==='p')
