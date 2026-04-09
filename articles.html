@@ -467,7 +467,7 @@ body{padding-top:72px;overflow-x:hidden;}
       {t:'h2',tx:'3. How to Talk to Ms. Flow'},
       {t:'p',tx:'Prompting is not about giving instructions. It is about giving context. Ms. Flow performs best when she understands who you are, what you want, who you are speaking to, and why it matters.'},
       {t:'bq',tx:'Weak prompt: Write a post about my business. Strong prompt: I run a small skincare brand targeting young professionals. I want to position my brand as affordable luxury. Create a week of content that builds trust and awareness, with a mix of education, storytelling, and promotion. The difference is clarity.'},
-      {t:'p',tx:'To get the best results from Ms. Flow, always include: context (who you are and what you do), objective (what you want to achieve — awareness, sales, engagement, or education), audience (who you are speaking to), tone (how it should sound — professional, bold, conversational, or inspirational), and format (what you want her to produce — a single post, captions, a strategy, or a full content plan).'},
+      {t:'p',tx:'To get the best results from Ms. Flow, always include: context (who you are and what you do), objective (what you want to achieve), audience (who you are speaking to), tone (how it should sound), and format (what you want her to produce).'},
       {t:'h2',tx:'4. From Prompting to System Building'},
       {t:'p',tx:'Ms. Flow is not designed for one-off requests. She is designed to help you build systems. Using prompts, templates, scheduling, and analytics together, you move from random posting to structured communication, from guesswork to strategy, and from effort to leverage.'},
       {t:'h2',tx:'5. How to Start Properly'},
@@ -510,7 +510,8 @@ body{padding-top:72px;overflow-x:hidden;}
     var grid=document.getElementById('artgrid');
     var list=filter==='all'?ARTS:ARTS.filter(function(a){return a.cat===filter;});
     grid.innerHTML=list.map(function(a){
-      return '<div class="artcard" onclick="showArticle(''+a.id+'')">'+
+      var safeId=a.id.replace(/'/g,"");
+      return '<div class="artcard" onclick="showArticle(\"'+safeId+'\")">'+
         '<div class="atag">'+a.tag+'</div>'+
         '<h3>'+a.title+'</h3>'+
         '<p>'+a.summary+'</p>'+
